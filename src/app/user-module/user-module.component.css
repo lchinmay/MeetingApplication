@@ -1,0 +1,31 @@
+.positionforlabel
+{
+    float: right;
+    padding-left: 40%;
+}
+
+mat-tab
+{
+    padding-left: 10px;
+}
+
+.fill-space {
+    /* This fills the remaining space, by using flexbox.
+    Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+
+  .adminname
+  {
+    
+    right: 45px;
+    position: absolute;
+    top: 22px;
+  }
+
+  .menuicon
+  {
+      color: rgb(189, 189, 189);
+    right: 15px;
+    position: absolute;
+  }

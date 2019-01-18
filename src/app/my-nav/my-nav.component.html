@@ -1,0 +1,38 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <mat-toolbar>Xplore it</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item [routerLink] = "['/first-page']">Glammourous Tours</a>
+      <a mat-list-item [routerLink] = "['/second-page']">Take Tour</a>
+      <a mat-list-item [routerLink] = "['/third-page']">Your Bookings</a>
+    </mat-nav-list>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <mat-toolbar color="primary">
+      <ul>
+        <li>
+          <button type="button" mat-button (click)="drawer.toggle()">
+              <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+          </button>
+        </li>
+        <li>  
+        <span style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 30px;">
+          <strong>Xplore.it</strong>
+        </span>
+        </li>
+        <li style="float:right">
+        <button type="button" mat-button  [routerLink] = "['/home']" style= "float: right">
+          <mat-icon aria-label="Side nav toggle icon">home</mat-icon>
+        </button>
+        </li>
+      </ul>
+    </mat-toolbar>
+    
+    <!-- <button type="button" mat-button (click)="drawer.toggle()">
+      Toggle sidenav
+    </button> -->
+  </div>
+  <router-outlet></router-outlet>
+
+</mat-drawer-container>

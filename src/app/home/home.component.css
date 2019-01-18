@@ -1,0 +1,31 @@
+mat-toolbar {
+    background-color: beige;
+    padding: 1%;
+}
+
+#homeButton {
+    float: right;
+    margin: auto;
+    text-align: center;
+    width: 4%;
+    margin-left: 88%;
+}
+
+a:hover, a:active{
+    color: lightgray;
+}
+ 
+.navigation-items{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width:80%;
+    margin: auto; 
+    padding: 6%; 
+    background-image:linear-gradient(white, rgb(241,241,241)); 
+    font-family: sans-serif; 
+    color:darkorange
+}

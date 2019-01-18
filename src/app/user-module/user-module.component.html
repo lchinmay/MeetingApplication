@@ -1,0 +1,41 @@
+<div>
+  <mat-toolbar class="example-toolbar" style="background-image: linear-gradient(to right,darkcyan,rgb(0, 92, 92));">
+    <label style="color: white; font-size: large">{{pageTitle}}</label>
+      <mat-tab-group style="position: relative; padding-left: 14%;">
+         <mat-tab>
+            <ng-template mat-tab-label>
+               <a class="nav-link" [routerLink] = "['/welcome']" style="text-decoration: none; color: white; font-size: large;">
+                  Guide
+               </a>
+            </ng-template>
+         </mat-tab> 
+         <mat-tab>
+            <ng-template mat-tab-label>
+               <a class="nav-link" [routerLink] = "['/register']" style="text-decoration: none;color: white; font-size: large">
+                  Book Meeting Room
+               </a>
+            </ng-template>
+         </mat-tab>
+         <mat-tab>
+            <ng-template mat-tab-label>
+               <a class="nav-link" [routerLink] = "['/userdetails']" style="text-decoration: none; color: white; font-size: large">
+                  View Details
+               </a>
+            </ng-template>
+         </mat-tab>
+      </mat-tab-group>
+
+      <label class="adminname" style="color: rgb(182, 152, 152); font-size: small"> {{adminName}} </label>
+      <button class="menuicon" mat-icon-button [matMenuTriggerFor] = "menu">
+        <mat-icon  >more_vert</mat-icon>
+      </button>
+      <mat-menu #menu = "matMenu">
+        <button mat-menu-item>
+          <mat-icon>logout</mat-icon>
+          <span style="font: bold; font-size: large">Signout</span>
+        </button>
+      </mat-menu>   
+   </mat-toolbar>
+
+  <router-outlet></router-outlet>
+</div>
