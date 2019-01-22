@@ -1,0 +1,14 @@
+#bg {
+    background-image: url("../../assets/images/home3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 18px;
+
+}
+
+table.mat-table {
+    border-spacing: 0;
+    width: 90%;
+}
+  
+ 

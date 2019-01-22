@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
 import { RegisterComponent } from './register/register.component';
 import { MyNavComponent } from './my-nav/my-nav.component';
 import { UserModuleComponent } from './user-module/user-module.component';
+import { BookRoomComponent } from './book-room/book-room.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { UserModuleComponent } from './user-module/user-module.component';
     HomeComponent,
     RegisterComponent,
     MyNavComponent,
-    UserModuleComponent
+    UserModuleComponent,
+    BookRoomComponent
   ],
   imports: [
     BrowserModule,
@@ -30,8 +32,10 @@ import { UserModuleComponent } from './user-module/user-module.component';
       // { path: 'first-page', component: FirstPageComponent},
       { path: 'user-module', component: UserModuleComponent},
       { path: 'register', component: RegisterComponent},
+      { path: 'book-room', component: BookRoomComponent },
       { path: 'home', component: HomeComponent},
       { path: '', redirectTo: '/home', pathMatch: 'prefix'}
+      
     ]),
   ],
   providers: [],
